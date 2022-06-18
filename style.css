@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background-color: #000;
+  }
+  main {
+    margin: 50px auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    /* height: 100vh; */
+    padding: 5em;
+  }
+  .right-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  .left-container {
+    width: 40%;
+    margin-right: 20px;
+  }
+  .left-container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .left-container p {
+    font-size: 0.65rem;
+  }
+  form {
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  form,
+  .right-header {
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bottom-text {
+    color: gray;
+    font-size: 10px;
+  }
+  input,
+  button {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    height: 50px;
+    padding: 20px;
+    outline: none;
+  }
+  button {
+    color: #fff;
+    background-color: #39cb8a;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.08);
+  }
+  .right-header {
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+  }
+  .bottom-text a {
+    text-decoration: none;
+    color: #e498a1;
+  }
+  
+  /* media query */
+  @media screen and (max-width: 900px) {
+    main {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+    .left-container {
+      margin-bottom: 10px;
+      width: 60%;
+      height: 100%;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .left-container p {
+      font-size: 0.8rem;
+    }
+    form {
+      padding-top: 20px;
+    }
+  }
+  
